@@ -11,12 +11,6 @@
         String centimeter = request.getParameter("centimeter");
         String[] unitArray = request.getParameterValues("unit");
 
-//        String unitString ="";
-//
-//        for (String u : unitArray) {
-//            unitString += u + " ";
-//        }
-
         // sb.append 메서드를 통해서 여러 값을 추가 및 관리할 수 있음
         StringBuilder sb = new StringBuilder();
 
