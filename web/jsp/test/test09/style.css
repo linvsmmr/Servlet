@@ -1,0 +1,12 @@
+#wrap{
+    width: 1200px;
+    height: 1200px;
+}
+
+#head{
+    background-color: crimson;
+}
+
+#nav-link{
+    text-decoration-color:aliceblue;
+}

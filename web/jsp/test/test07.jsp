@@ -27,8 +27,6 @@
         map = new HashMap<String, Object>() {{ put("name", "반올림피자"); put("menu", "피자"); put("point", 4.3); }};
         list.add(map);
 
-
-
         String menu = request.getParameter("menu");
         String filter = request.getParameter("filter");
 
