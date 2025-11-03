@@ -64,7 +64,7 @@
                 <tr>
                     <th scope="col">id</th>
                     <th scope="col">표지</th>
-                    <th scope="col">제목</th>
+                    <th scope="col">제목</th>r
                 </tr>
             </thead>
 
