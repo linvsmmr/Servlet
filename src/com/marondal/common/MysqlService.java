@@ -5,7 +5,26 @@ import java.util.*;
 
 public class MysqlService {
 
+
+    // design pattern
+    // singleton pattern : 클래스 내에서 하나의 객체만 생성하고 이를 활용하도록 제한
+
+    // static 변수 : 객체생성 없이 사용할 수 있는 멤버변수
+    private static MysqlService mysqlService = null;
+
     private Connection connection;
+
+    // 해당 클래스 객체를 사용할 수 있도록 리턴해주는 메서드
+    // 객체를 사용하는 쪽에서 생성자 대신 활용
+    // static 메서드 : 객체 생성 없이 호출할 수 있는 메서드
+    public static MysqlService getInstance() {
+        if (mysqlService == null) {
+            mysqlService = new MysqlService();
+        }
+        return mysqlService;
+    }
+
+
 
     // 접속하기
     public boolean connect() {

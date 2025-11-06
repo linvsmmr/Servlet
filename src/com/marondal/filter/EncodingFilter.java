@@ -11,7 +11,7 @@ import java.io.UnsupportedEncodingException;
 // 해당 필터를 거쳐갈 서블릿에 대한 url 패턴 지정 가능
 // /servlet으로 시작하는 서블릿에만 적용 -> /servlet/**
 // 모든 페이지에 적용하고 싶다 -. /**
-@WebFilter("/**")
+@WebFilter("/*")
 public class EncodingFilter implements Filter {
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
